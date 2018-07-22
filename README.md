@@ -9,6 +9,7 @@ I needed a way to rewrite incoming URLs `/api/v2/foo` to remove the `v2` and tur
 This might be a useful project if:
 
 - you need a place to spin up and test nginx configs
+- you haven't seen an nginx image used without a `Dockerfile`
 - you've never linked containers together using docker compose
 - you need a super simple example of sinatra app that's wired up correctly to rackup.
 
