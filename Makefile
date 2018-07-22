@@ -11,3 +11,6 @@ clean:
 
 shell:
 	docker-compose run app bash
+
+test:
+	bash url_tests.sh
