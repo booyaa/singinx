@@ -13,6 +13,8 @@ This might be a useful project if:
 - you've never linked containers together using docker compose
 - you need a super simple example of sinatra app that's wired up correctly to rackup.
 
+Update: I wrote a [blog post](https://booyaa.wtf/2018/sketchpad-project-sinatra-nginx-docker-compose/) explaining the background behind this project.
+
 ## Usage
 
 ```shell
