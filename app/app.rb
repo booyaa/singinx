@@ -1,19 +1,22 @@
 require 'sinatra/base'
 require 'sinatra/namespace'
 
-configure do
-  set :bind, '0.0.0.0'
-end
-
 class MyWay < Sinatra::Base
+  configure do
+    set :bind, '0.0.0.0'
+    enable :logging
+  end
+
   register Sinatra::Namespace
   namespace '/api' do
     get '/foo' do
-      'foo'
+      logger.info "api/foo parameters: #{params}"
+      params.inspect
     end
 
     post '/bar' do
-      puts params['foo']
+      logger.info "api/bar parameters: #{params}"
+      params.inspect
     end
   end
 end
