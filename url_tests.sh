@@ -1,6 +1,4 @@
 #!/bin/bash
-clear
-
 printf "Version in the URL path\n"
 printf "=======================\n"
 
